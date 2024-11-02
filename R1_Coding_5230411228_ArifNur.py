@@ -70,26 +70,31 @@ minuman = [
 daftar_pegawai = []
 daftar_transaksi = []
 
-# # Transaksi 1
-# transaksi1 = Transaksi(1, [])  # No transaksi 1
-# transaksi1.tambah_detail(snacks[0])  # Menambahkan Cheetos
-# transaksi1.tambah_detail(makanan[1])  # Menambahkan Sate Ayam
-# daftar_transaksi.append(transaksi1)
+pegawai1 = Pegawai("001", "Joko", "Solo")
+pegawai2 = Pegawai("002", "Bambang", "Bengkulu")
+daftar_pegawai.append(pegawai1)
+daftar_pegawai.append(pegawai2)
 
-# # Transaksi 2
-# transaksi2 = Transaksi(2, [])  # No transaksi 2
-# transaksi2.tambah_detail(minuman[2])  # Menambahkan Teh Botol
-# transaksi2.tambah_detail(makanan[3])  # Menambahkan Ayam Penyet
-# daftar_transaksi.append(transaksi2)
+# Transaksi 1
+transaksi1 = Transaksi(1, [])  # No transaksi 1
+transaksi1.tambah_detail(snacks[0])  # Menambahkan Cheetos
+transaksi1.tambah_detail(makanan[1])  # Menambahkan Sate Ayam
+daftar_transaksi.append(transaksi1)
 
-# # Menambahkan jumlah produk pada transaksi
-# # Misalnya, untuk transaksi 1 kita beli 2 Cheetos dan 1 Sate Ayam
-# transaksi1.tambah_detail(Produk("S001", "Cheetos", "Snack", 15000 * 2))  # 2 Cheetos
-# transaksi1.tambah_detail(Produk("M002", "Sate Ayam", "Makanan", 30000 * 1))  # 1 Sate Ayam
+# Transaksi 2
+transaksi2 = Transaksi(2, [])  # No transaksi 2
+transaksi2.tambah_detail(minuman[2])  # Menambahkan Teh Botol
+transaksi2.tambah_detail(makanan[3])  # Menambahkan Ayam Penyet
+daftar_transaksi.append(transaksi2)
 
-# # Untuk transaksi 2, kita bisa menambahkan jumlah juga
-# transaksi2.tambah_detail(Produk("B002", "Teh Botol", "Minuman", 8000 * 1))  # 1 Teh Botol
-# transaksi2.tambah_detail(Produk("M004", "Ayam Penyet", "Makanan", 35000 * 1))  # 1 Ayam Penyet
+# Menambahkan jumlah produk pada transaksi
+# Misalnya, untuk transaksi 1 kita beli 2 Cheetos dan 1 Sate Ayam
+transaksi1.tambah_detail(Produk("S001", "Cheetos", "Snack", 15000 * 2))  # 2 Cheetos
+transaksi1.tambah_detail(Produk("M002", "Sate Ayam", "Makanan", 30000 * 1))  # 1 Sate Ayam
+
+# Untuk transaksi 2, kita bisa menambahkan jumlah juga
+transaksi2.tambah_detail(Produk("B002", "Teh Botol", "Minuman", 8000 * 1))  # 1 Teh Botol
+transaksi2.tambah_detail(Produk("M004", "Ayam Penyet", "Makanan", 35000 * 1))  # 1 Ayam Penyet
 
 def TambahProduk():
     kodeproduk = input("Masukkan Kode Produk: ")
